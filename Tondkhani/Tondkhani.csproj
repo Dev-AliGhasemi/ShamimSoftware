@@ -1,0 +1,878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{968AB40D-1A3E-4C64-A922-5F586E1C634D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tondkhani</RootNamespace>
+    <AssemblyName>Tondkhani</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Shamim Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assab.Designer.cs">
+      <DependentUpon>Assab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assab2.Designer.cs">
+      <DependentUpon>Assab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Assab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assab3.Designer.cs">
+      <DependentUpon>Assab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ball.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ball.Designer.cs">
+      <DependentUpon>Ball.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Check.cs" />
+    <Compile Include="Connect_us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connect_us.Designer.cs">
+      <DependentUpon>Connect_us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decrease_Eye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decrease_Eye.Designer.cs">
+      <DependentUpon>Decrease_Eye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decrease_Eye2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decrease_Eye2.Designer.cs">
+      <DependentUpon>Decrease_Eye2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diffrent_time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diffrent_time.Designer.cs">
+      <DependentUpon>Diffrent_time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Eye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Eye.Designer.cs">
+      <DependentUpon>Eye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Point_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Point_Test.Designer.cs">
+      <DependentUpon>Point_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SearchWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchWord.Designer.cs">
+      <DependentUpon>SearchWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion1.Designer.cs">
+      <DependentUpon>Seassion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion10.Designer.cs">
+      <DependentUpon>Seassion10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion2.Designer.cs">
+      <DependentUpon>Seassion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion3.Designer.cs">
+      <DependentUpon>Seassion3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion4.Designer.cs">
+      <DependentUpon>Seassion4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion5.Designer.cs">
+      <DependentUpon>Seassion5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion6.Designer.cs">
+      <DependentUpon>Seassion6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion7.Designer.cs">
+      <DependentUpon>Seassion7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion8.Designer.cs">
+      <DependentUpon>Seassion8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Seassion9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seassion9.Designer.cs">
+      <DependentUpon>Seassion9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shamim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shamim.Designer.cs">
+      <DependentUpon>Shamim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Spring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Spring.Designer.cs">
+      <DependentUpon>Spring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tamorkoz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tamorkoz.Designer.cs">
+      <DependentUpon>Tamorkoz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Incorrect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Incorrect.Designer.cs">
+      <DependentUpon>Test_Incorrect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Test_Matlab.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test_Matlab.Designer.cs">
+      <DependentUpon>Test_Matlab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Word.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Word.Designer.cs">
+      <DependentUpon>Word.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Assab.resx">
+      <DependentUpon>Assab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assab2.resx">
+      <DependentUpon>Assab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assab3.resx">
+      <DependentUpon>Assab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ball.resx">
+      <DependentUpon>Ball.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Connect_us.resx">
+      <DependentUpon>Connect_us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decrease_Eye.resx">
+      <DependentUpon>Decrease_Eye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decrease_Eye2.resx">
+      <DependentUpon>Decrease_Eye2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diffrent_time.resx">
+      <DependentUpon>Diffrent_time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Eye.resx">
+      <DependentUpon>Eye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Point_Test.resx">
+      <DependentUpon>Point_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchWord.resx">
+      <DependentUpon>SearchWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion1.resx">
+      <DependentUpon>Seassion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion10.resx">
+      <DependentUpon>Seassion10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion2.resx">
+      <DependentUpon>Seassion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion3.resx">
+      <DependentUpon>Seassion3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion4.resx">
+      <DependentUpon>Seassion4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion5.resx">
+      <DependentUpon>Seassion5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion6.resx">
+      <DependentUpon>Seassion6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion7.resx">
+      <DependentUpon>Seassion7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion8.resx">
+      <DependentUpon>Seassion8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seassion9.resx">
+      <DependentUpon>Seassion9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shamim.resx">
+      <DependentUpon>Shamim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Spring.resx">
+      <DependentUpon>Spring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tamorkoz.resx">
+      <DependentUpon>Tamorkoz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Incorrect.resx">
+      <DependentUpon>Test_Incorrect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test_Matlab.resx">
+      <DependentUpon>Test_Matlab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Word.resx">
+      <DependentUpon>Word.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\BKOODB.TTF" />
+    <None Include="Resources\BKoodkBd.ttf" />
+    <None Include="Resources\BNazanin.ttf" />
+    <None Include="Resources\segoeui.ttf" />
+    <None Include="Resources\segoeuib.ttf" />
+    <None Include="Resources\segoeuii.ttf" />
+    <None Include="Resources\segoeuil.ttf" />
+    <None Include="Resources\segoeuisl.ttf" />
+    <None Include="Resources\segoeuiz.ttf" />
+    <None Include="Resources\seguibl.ttf" />
+    <None Include="Resources\seguibli.ttf" />
+    <None Include="Resources\seguili.ttf" />
+    <None Include="Resources\seguisb.ttf" />
+    <None Include="Resources\seguisbi.ttf" />
+    <None Include="Resources\seguisli.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B Koodak Bold.ttf" />
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buttonminimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\mini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\mini2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound\Warning.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound\Click1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\sound\High1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shamim Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shamim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\buttonclose2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\buttonminimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\buttonclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\buttonminimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\create.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about us 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about us 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\connect us 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\connect us 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\what tk 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\what tk 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about_software 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about_software 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\learn 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\learn 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\test 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\test 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\eye 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\eye 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\incorrect 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\incorrect 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\number 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\number 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\practice 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\practice 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\table 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\table 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 59.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 57.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 47.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about software 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\about software 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion1 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion1 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion2 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion2 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion3 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion3 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion4 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion4 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion5 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion5 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion6 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion6 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion7 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion7 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion8 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion8 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion9 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion9 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion10 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\button_learn\seassion10 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro.swf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Asset 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\Tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\pic9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\point1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\point2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\start1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\start2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\decrease1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\decrease2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\easy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\easy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\hard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\hard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\medium1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\medium2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\point1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\point2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\practice_tond1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\practice_tond2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\time1_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\time2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\word1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\other_button\word2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\butterfly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sudoko.exe" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\00.00-03.05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\06.10-17.55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\07.10-21.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\10.10-07.05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\12.25-20.25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\13.55-16.00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\14.10-00.45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\15.45-22.30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\17.09-15.20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\19.25-23.40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\22.15-11.20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\3.5_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\3.55_06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\5.5_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\8.15_08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\8.50_05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\10.55_07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\12.5_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\13.35_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\14.55_03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\21.15_04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\22.29_9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\dot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\pic\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\time\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\spring1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\spring2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\tamarkoz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\tamarkoz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\asab1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\asab2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\ball1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\ball2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\memory1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\memory2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\word1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\word2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamarkoz1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tamarkoz2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\Spring1_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\picture\Spring2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Shamim Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
